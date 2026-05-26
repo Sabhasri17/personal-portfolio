@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabhasri's Website</title>
+    <meta name="description" content="Persnal profile Page of Sabhasri">
+    <link rel="icon" href="./asserts/img/icon.ico" type="image/x-icon">
+</head>
+<style>
+     body{
+        background-color: #b6e8f5;
+        font-family: 'Poppins', sans-serif;
+        color: rgb(4, 4, 75);
+        line-height: 1.6; 
+        margin: 40px;
+        padding: 0;
+     }
+     h1, h2{
+        font-weight: 700;
+     }
+
+     p {
+        font-weight: 400;
+     }
+
+     a {
+        color: rgb(1, 7, 14);
+        text-decoration: none;
+     }
+
+     a:hover {
+        color: rgb(5, 5, 134);
+        text-decoration: underline;
+     }
+
+     header {
+        background: linear-gradient(to right, #831bcd, #f9620b);
+        color: #fff;
+        padding: 40px 0;
+        text-align: center;
+     }
+
+     section {
+        padding: 10px;
+        text-align: center;
+     }
+
+     img {
+        width: 200px;
+        height: 260px;
+        border-radius: 100px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        object-fit: cover;
+     }
+
+     form {
+        max-width: 500px;
+        margin: 20px auto;
+        padding: 20px;
+        background: #fff;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+     }
+
+     form input[type="text"],
+     form input[type="email"],
+     form textarea {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+     }
+
+     form button {
+        background: rgb(1, 7, 14);
+        color: #ffffff;
+        border: 0;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 18px;
+     }
+
+     form button:hover {
+        background: #0056b3;
+     }
+
+     footer {
+        background: linear-gradient(to right, #831bcd, #f9620b);
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+     }
+</style>
+
+<body>
+    <center>
+    <header>
+        <h1>SABHASRI'S PORTFOLIO</h1>
+    </header><hr>
+
+    <section>
+        <h2>About me</h2>
+        <p>Hello I'm Sabhasri, and here is a little Info about me</p>
+        <img src="icon.ico.jpg" alt="sabhasri's pic" width="300" height="350">
+    </section><hr>
+
+    <section>
+        <h2>Let's connect!</h2>
+        <p>Aspiring Software Engineer | Proficient in python & web development and beginner in java</p>
+        <p> <a href="https://www.linkedin.com/in/sabhasri-c-s-a549662a3/">Linkedin</a> | <a href="mailto:sabhasrics@gmail.com">Send me an email</a></p>
+    </section><hr>
+
+    <section>
+        <h2>Portfolio</h2>
+        <p>Take a look at some of my works.</p>
+        <p><a href="project_css.html">Project 1</a></p>
+        <p><a href="project2.html">Project 2</a></p>
+    </section>
+
+    <section>
+        <h2>My Skills</h2>
+        <table align="center">
+            <tr>
+                <td>
+                    <ul style="text-align: left">
+                        <li>Web develpment</li>
+                        <li>Excel</li>
+                        <li>Beginner in java</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </section><hr>
+
+    <section>
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="mail">Email:</label>
+            <input type="email" id="email" name="email"<br><br>
+
+            <label for="message">Message:</label>
+            <textarea id="messsage" name="message"></textarea><br><br>
+            
+            <button type="submit">Send</button>
+        </form>
+    </section><hr>
+
+    <footer>
+        <p>&copy; 2025 sabhasri. Bulit by me.</p>
+    </footer>
+    </center>
+</body>
+</html>

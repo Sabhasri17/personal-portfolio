@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #ebd4db;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: #fff;
+            border-radius: 10px;
+            color: #47afeb;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 30px 40px;
+            text-align: center;
+        }
+        .form {
+            margin-bottom: 1em;
+        }
+        input[type="date"] {
+            padding: 8px;
+            font-size: 1rem;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            margin-left: 10px;
+            padding: 8px 20px;
+            background: #9474d4;
+            color: rgb(15, 4, 4);
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        .result {
+            margin-top: 1em;
+            font-size: 1.2em;
+            color: #23db0b;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Age Calculator</h1>
+        <div class="form">
+            <label for="dob">Date of Birth:</label><br><br>
+            <input type="date" id="dob"><br><br>
+            <button onclick="calculateAge()">Calculate Age</button>
+        </div>
+        <div class="result" id="ageResult">Your age is:<br> 0 years, 0 months, 0 days</div>
+    </div>
+    <script>
+        function calculateAge() {
+            const dobInput = document.getElementById('dob').value;
+            if (!dobInput) {
+                document.getElementById('ageResult').textContent = "Please enter a valid birthdate.";
+                return;
+            }
+            const dob = new Date(dobInput);
+            const today = new Date();
+
+            let years = today.getFullYear() - dob.getFullYear();
+            let months = today.getMonth() - dob.getMonth();
+            let days = today.getDate() - dob.getDate();
+
+            if (days < 0) {
+                months--;
+                const prevMonth = new Date(today.getFullYear(), today.getMonth(), 0);
+                days += prevMonth.getDate();
+            }
+            if (months < 0) {
+                years--;
+                months += 12;
+            }
+
+            if (years < 0 || (years === 0 && months === 0 && days < 0)) {
+                document.getElementById('ageResult').textContent = "Please enter a valid birthdate.";
+                return;
+            }
+
+            document.getElementById('ageResult').textContent =
+                `Your age is: ${years} years, ${months} months, ${days} days`;
+        }
+    </script>
+</body>
+</html>
