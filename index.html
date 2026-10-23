@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SABHASRI C S | Premium Portfolio</title>
+    <meta name="description"
+        content="Personal Portfolio of Sabhasri C S - Aspiring Full Stack Developer. Creative design, projects showcase, skills, educational background, and contact details.">
+    <!-- Main Style Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Floating Background Glowing Blobs -->
+    <div class="bg-glow-wrapper">
+        <div class="glow-blob blob-1"></div>
+        <div class="glow-blob blob-2"></div>
+        <div class="glow-blob blob-3"></div>
+    </div>
+
+    <!-- 1. Floating Glassmorphism Navigation Bar -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">SABHASRI.</a>
+
+            <nav>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#hero" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <!-- Theme Toggle Switch -->
+                <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle dark/light theme">
+                    <!-- Sun Icon (Shows in Light Mode) -->
+                    <svg class="sun-icon" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="4" />
+                        <path
+                            d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
+                    </svg>
+                    <!-- Moon Icon (Shows in Dark Mode - default) -->
+                    <svg class="moon-icon" viewBox="0 0 24 24">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                    </svg>
+                </button>
+
+                <!-- Mobile Navigation Hamburger Toggle -->
+                <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle mobile menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. Hero Section -->
+    <section class="hero section" id="hero">
+        <div class="container">
+            <div class="hero-grid">
+
+                <!-- Hero Textual Content -->
+                <div class="hero-content reveal">
+                    <div class="hero-tagline">Welcome to my space</div>
+                    <h1 class="hero-name">SABHASRI C S</h1>
+                    <div class="hero-title-wrapper">
+                        <span>Aspiring</span>
+                        <span class="hero-typing" id="typing-text"></span>
+                    </div>
+                    <p class="hero-description">
+                        Passionate about crafting high-performance, modern, and beautiful full-stack web applications.
+                        Eager to solve real-world problems through clean, optimized code and immersive UI/UX
+                        experiences.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="assets/Sabhasri C S.pdf" download class="btn btn-primary">
+                            <i data-lucide="download"></i> Download Resume
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i data-lucide="mail"></i> Contact Me
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Visual (Avatar with Glass Effects) -->
+                <div class="hero-visual reveal delay-200">
+                    <div class="profile-card glass-panel">
+                        <div class="profile-glow"></div>
+                        <div class="profile-frame">
+                            <img src="assets/profile.png" alt="Sabhasri C S Avatar" class="profile-img">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. About Me Section -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Discovery</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+
+            <div class="about-grid">
+
+                <div class="about-info">
+                    <!-- Intro Card -->
+                    <div class="about-intro-card glass-panel reveal">
+                        <h3>Who I Am</h3>
+                        <p>
+                            I am a highly motivated computer science student and aspiring full-stack developer with a
+                            passion for designing functional, sleek, and user-centric web applications. I love diving
+                            deep into backend architecture while keeping a strict eye on clean and aesthetic front-end
+                            design.
+                        </p>
+                        <p>
+                            Building projects with modern tools is not just a career goal for me, but a creative outlet.
+                            I continuous look to learn new patterns, technologies, and paradigms to build faster and
+                            more secure applications.
+                        </p>
+                    </div>
+
+                    <!-- Career Goals Card -->
+                    <div class="about-goals-card glass-panel reveal delay-100">
+                        <h3><i data-lucide="target" style="color: var(--primary-accent);"></i> Career Goals</h3>
+                        <p>
+                            My aim is to bridge the gap between back-end data management and dynamic front-end visuals.
+                            I aspire to join an innovative development team where I can contribute to meaningful
+                            applications, write clean-architectured code, expand my technology stack, and grow into a
+                            Senior Full Stack Engineer.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Stats and Quick Facts Grid -->
+                <div class="about-stats">
+                    <div class="stat-card glass-panel reveal">
+                        <div class="stat-icon"><i data-lucide="graduation-cap"></i></div>
+                        <span class="stat-number">2028</span>
+                        <span class="stat-label">Graduation Year</span>
+                    </div>
+
+                    <div class="stat-card glass-panel reveal delay-100">
+                        <div class="stat-icon"><i data-lucide="code"></i></div>
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Coding Projects</span>
+                    </div>
+
+                    <div class="stat-card glass-panel reveal delay-200">
+                        <div class="stat-icon"><i data-lucide="star"></i></div>
+                        <span class="stat-number">7.9+</span>
+                        <span class="stat-label">CGPA Academic Score</span>
+                    </div>
+
+                    <div class="stat-card glass-panel reveal delay-300">
+                        <div class="stat-icon"><i data-lucide="award"></i></div>
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Dedication</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Skills Section -->
+    <section class="skills section" id="skills">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Abilities</span>
+                <h2 class="section-title">My Technical Toolbox</h2>
+            </div>
+
+            <div class="skills-wrapper">
+                <!-- Front-End Category -->
+                <div class="skills-category glass-panel reveal">
+                    <h3 class="skills-category-title"><i data-lucide="layout" style="color: var(--primary-accent);"></i>
+                        Front-End Stack</h3>
+                    <div class="skills-grid">
+
+                        <div class="skill-card glass-panel">
+                            <div class="skill-icon-wrap"><i data-lucide="file-code-2"></i></div>
+                            <span class="skill-name">HTML5</span>
+                        </div>
+
+                        <div class="skill-card glass-panel">
+                            <div class="skill-icon-wrap"><i data-lucide="palette"></i></div>
+                            <span class="skill-name">CSS3</span>
+                        </div>
+
+                        <div class="skill-card glass-panel">
+                            <div class="skill-icon-wrap"><i data-lucide="file-json"></i></div>
+                            <span class="skill-name">JavaScript</span>
+                        </div>
+
+                        <div class="skill-card glass-panel">
+                            <div class="skill-icon-wrap"><i data-lucide="atom"></i></div>
+                            <span class="skill-name">React</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Back-End Category -->
+                <div class="skills-category glass-panel reveal delay-150">
+                    <h3 class="skills-category-title"><i data-lucide="server"
+                            style="color: var(--secondary-accent);"></i> Back-End & Database</h3>
+                    <div class="skills-grid">
+
+                        <div class="skill-card glass-panel">
+                            <div class="skill-icon-wrap"><i data-lucide="cpu"></i></div>
+                            <span class="skill-name">Node.js</span>
+                        </div>
+
+                        <div class="skill-card glass-panel">
+                            <div class="skill-icon-wrap"><i data-lucide="database"></i></div>
+                            <span class="skill-name">MongoDB</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Version Control & Tools -->
+                <div class="skills-category glass-panel reveal delay-300">
+                    <h3 class="skills-category-title"><i data-lucide="git-branch"
+                            style="color: var(--primary-accent);"></i> DevOps & Tools</h3>
+                    <div class="skills-grid">
+
+                        <div class="skill-card glass-panel">
+                            <div class="skill-icon-wrap"><i data-lucide="git-pull-request"></i></div>
+                            <span class="skill-name">Git</span>
+                        </div>
+
+                        <div class="skill-card glass-panel">
+                            <div class="skill-icon-wrap">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-github">
+                                    <path
+                                        d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                                    <path d="M9 18c-4.51 2-5-2-7-2" />
+                                </svg>
+                            </div>
+                            <span class="skill-name">GitHub</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Projects Section -->
+    <section class="projects section" id="projects">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Showcase</span>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+
+            <div class="projects-grid">
+
+                <!-- Project 1 -->
+                <article class="project-card glass-panel reveal">
+                    <div class="project-image-box">
+                        <img src="assets/project-ecommerce.png" alt="E-Commerce Platform Mockup" class="project-img">
+                        <div class="project-overlay">
+                            <a href="#" class="btn btn-primary btn-sm"><i data-lucide="external-link"></i> Quick
+                                View</a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">NexusCart E-Commerce</h3>
+                        <p class="project-desc">
+                            A dynamic online shopping storefront features secure checkout pipelines, state management
+                            using React Redux, product catalogue search/filtering, and custom vendor analytics portals.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">Node.js</span>
+                            <span class="project-tag">MongoDB</span>
+                            <span class="project-tag">Express</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com" target="_blank" class="project-link"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-github"
+                                    style="width: 1.1rem; height: 1.1rem; vertical-align: middle; margin-right: 0.2rem;">
+                                    <path
+                                        d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                                    <path d="M9 18c-4.51 2-5-2-7-2" />
+                                </svg> Source Code</a>
+                            <a href="#" class="project-link"><i data-lucide="globe"></i> Live Preview</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card glass-panel reveal delay-150">
+                    <div class="project-image-box">
+                        <img src="assets/project-chat.png" alt="Real-time Chat Application Mockup" class="project-img">
+                        <div class="project-overlay">
+                            <a href="#" class="btn btn-primary btn-sm"><i data-lucide="external-link"></i> Quick
+                                View</a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">AeroChat Messaging</h3>
+                        <p class="project-desc">
+                            Real-time chat client supporting direct rooms, group creation, online/typing statuses, file
+                            attachment sharing, and persistent chat logs managed using modern WebSockets.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">Socket.io</span>
+                            <span class="project-tag">Node.js</span>
+                            <span class="project-tag">MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com" target="_blank" class="project-link"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-github"
+                                    style="width: 1.1rem; height: 1.1rem; vertical-align: middle; margin-right: 0.2rem;">
+                                    <path
+                                        d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                                    <path d="M9 18c-4.51 2-5-2-7-2" />
+                                </svg> Source Code</a>
+                            <a href="#" class="project-link"><i data-lucide="globe"></i> Live Preview</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card glass-panel reveal delay-300">
+                    <div class="project-image-box">
+                        <img src="assets/project-tasks.png" alt="Task Dashboard Mockup" class="project-img">
+                        <div class="project-overlay">
+                            <a href="#" class="btn btn-primary btn-sm"><i data-lucide="external-link"></i> Quick
+                                View</a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">DevFlow Kanban Board</h3>
+                        <p class="project-desc">
+                            Visual development task management board featuring drag-and-drop mechanics, project
+                            deadlines, role assignments, labels, calendar metrics, and email alarm notifications.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">CSS Grid</span>
+                            <span class="project-tag">Node.js</span>
+                            <span class="project-tag">Express</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com" target="_blank" class="project-link"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-github"
+                                    style="width: 1.1rem; height: 1.1rem; vertical-align: middle; margin-right: 0.2rem;">
+                                    <path
+                                        d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                                    <path d="M9 18c-4.51 2-5-2-7-2" />
+                                </svg> Source Code</a>
+                            <a href="#" class="project-link"><i data-lucide="globe"></i> Live Preview</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Education Section -->
+    <section class="education section" id="education">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Milestones</span>
+                <h2 class="section-title">Education Timeline</h2>
+            </div>
+
+            <div class="education-timeline-wrapper">
+
+                <!-- Timeline item 1 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-badge"></div>
+                    <div class="timeline-card glass-panel">
+                        <div class="timeline-header">
+                            <div class="timeline-title">
+                                <h3>Bachelor of Engineering in Computer Science</h3>
+                                <div class="college-name">Erode Sengunthar Engineering College</div>
+                            </div>
+                            <span class="timeline-date">2023 - 2028</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p>
+                                Actively learning core engineering principles including Object Oriented Systems,
+                                Database Management (DBMS), Computer Networks, Data Structures & Algorithms, and modern
+                                web architectures. Working on hands-on team projects and engineering labs.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline item 2 -->
+                <div class="timeline-item reveal delay-200">
+                    <div class="timeline-badge"></div>
+                    <div class="timeline-card glass-panel">
+                        <div class="timeline-header">
+                            <div class="timeline-title">
+                                <h3>Higher Secondary Education (Grade XII)</h3>
+                                <div class="college-name">Meenakshi Sundaranar Sengunthar Higher Secondary School</div>
+                            </div>
+                            <span class="timeline-date">2021 - 2023</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p>
+                                Focused study in Computer Science, Mathematics, Physics, and Chemistry. Initiated basic
+                                coding in C++ and Python.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Get In Touch</span>
+                <h2 class="section-title">Contact Directory</h2>
+            </div>
+
+            <div class="contact-grid">
+
+                <!-- Info cards column -->
+                <div class="contact-info-panel reveal">
+                    <div class="contact-intro">
+                        <h3>Let's talk about projects!</h3>
+                        <p>
+                            If you'd like to collaborate on a coding project, discuss software design patterns, or check
+                            potential internship opportunities, feel free to drop a line! I will respond as soon as
+                            possible.
+                        </p>
+                    </div>
+
+                    <div class="contact-cards-stack">
+                        <!-- Email Card -->
+                        <div class="contact-card glass-panel">
+                            <div class="contact-icon-box"><i data-lucide="mail"></i></div>
+                            <div class="contact-details">
+                                <h4>Email Me</h4>
+                                <p><a href="mailto:sabhasrics@gmail.com">sabhasrics@gmail.com</a></p>
+                            </div>
+                        </div>
+
+                        <!-- Phone Card -->
+                        <div class="contact-card glass-panel">
+                            <div class="contact-icon-box"><i data-lucide="phone"></i></div>
+                            <div class="contact-details">
+                                <h4>Phone Link</h4>
+                                <p><a href="tel:+918248693930">+91 8248693930</a></p>
+                            </div>
+                        </div>
+
+                        <!-- Social Handles Info -->
+                        <div class="contact-card glass-panel">
+                            <div class="contact-icon-box"><i data-lucide="map-pin"></i></div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <p>Tamil Nadu, India</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form Panel -->
+                <div class="contact-form-panel glass-panel reveal delay-200">
+                    <h3 class="contact-form-title">Send a Message</h3>
+
+                    <form id="contact-form" autocomplete="off" novalidate>
+                        <div class="form-group">
+                            <label for="form-name" class="form-label">Full Name</label>
+                            <input type="text" id="form-name" class="form-input" placeholder="Your name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-email" class="form-label">Email Address</label>
+                            <input type="email" id="form-email" class="form-input" placeholder="Your email address"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-message" class="form-label">Your Message</label>
+                            <textarea id="form-message" class="form-input form-inputtextarea"
+                                placeholder="Describe your project requirements or thoughts here..."
+                                required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">
+                            <i data-lucide="send"></i> Send Message
+                        </button>
+
+                        <div class="form-status-msg" id="form-status"></div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="#hero" class="footer-logo">SABHASRI.</a>
+                <p class="footer-copy">
+                    &copy; 2026 Sabhasri C S. All rights reserved. Crafted with clean code and glassmorphism styling.
+                </p>
+                <div class="footer-socials">
+                    <a href="https://github.com" target="_blank" class="footer-social-link" aria-label="GitHub Profile">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-github">
+                            <path
+                                d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                            <path d="M9 18c-4.51 2-5-2-7-2" />
+                        </svg>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="footer-social-link"
+                        aria-label="LinkedIn Profile">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-linkedin">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                            <rect width="4" height="12" x="2" y="9" />
+                            <circle cx="4" cy="4" r="2" />
+                        </svg>
+                    </a>
+                    <a href="mailto:sabhasri@example.com" class="footer-social-link" aria-label="Email Address"><i
+                            data-lucide="mail"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Main Script Link -->
+    <script src="script.js"></script>
+</body>
+
+</html>
